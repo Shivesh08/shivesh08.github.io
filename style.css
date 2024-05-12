@@ -1,0 +1,1850 @@
+:where(.block-cover-image, .block-cover) {
+  min-height: 430px;
+  padding: 1em;
+}
+.block-cover,
+.block-cover-image {
+  align-items: center;
+  background-position: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  overflow: clip;
+  position: relative;
+}
+.block-cover .has-background-dim:not([class*="-background-color"]),
+.block-cover-image .has-background-dim:not([class*="-background-color"]),
+.block-cover-image.has-background-dim:not([class*="-background-color"]),
+.block-cover.has-background-dim:not([class*="-background-color"]) {
+  background-color: #000;
+}
+.block-cover .has-background-dim.has-background-gradient,
+.block-cover-image .has-background-dim.has-background-gradient {
+  background-color: initial;
+}
+.block-cover-image.has-background-dim:before,
+.block-cover.has-background-dim:before {
+  background-color: inherit;
+  content: "";
+}
+.block-cover .block-cover__background,
+.block-cover .block-cover__gradient-background,
+.block-cover-image .block-cover__background,
+.block-cover-image .block-cover__gradient-background,
+.block-cover-image.has-background-dim:not(.has-background-gradient):before,
+.block-cover.has-background-dim:not(.has-background-gradient):before {
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.block-cover-image.has-background-dim.has-background-dim-10
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-10
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-10:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-10
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-10
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-10:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.1;
+}
+.block-cover-image.has-background-dim.has-background-dim-20
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-20
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-20:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-20
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-20
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-20:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.2;
+}
+.block-cover-image.has-background-dim.has-background-dim-30
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-30
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-30:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-30
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-30
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-30:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.3;
+}
+.block-cover-image.has-background-dim.has-background-dim-40
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-40
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-40:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-40
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-40
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-40:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.4;
+}
+.block-cover-image.has-background-dim.has-background-dim-50
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-50
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-50:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-50
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-50
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-50:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.5;
+}
+.block-cover-image.has-background-dim.has-background-dim-60
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-60
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-60:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-60
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-60
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-60:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.6;
+}
+.block-cover-image.has-background-dim.has-background-dim-70
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-70
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-70:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-70
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-70
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-70:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.7;
+}
+.block-cover-image.has-background-dim.has-background-dim-80
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-80
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-80:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-80
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-80
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-80:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.8;
+}
+.block-cover-image.has-background-dim.has-background-dim-90
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-90
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-90:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-90
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-90
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-90:not(
+    .has-background-gradient
+  ):before {
+  opacity: 0.9;
+}
+.block-cover-image.has-background-dim.has-background-dim-100
+  .block-cover__background,
+.block-cover-image.has-background-dim.has-background-dim-100
+  .block-cover__gradient-background,
+.block-cover-image.has-background-dim.has-background-dim-100:not(
+    .has-background-gradient
+  ):before,
+.block-cover.has-background-dim.has-background-dim-100
+  .block-cover__background,
+.block-cover.has-background-dim.has-background-dim-100
+  .block-cover__gradient-background,
+.block-cover.has-background-dim.has-background-dim-100:not(
+    .has-background-gradient
+  ):before {
+  opacity: 1;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-0,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-0,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-0,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-0 {
+  opacity: 0;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-10,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-10,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-10,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-10 {
+  opacity: 0.1;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-20,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-20,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-20,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-20 {
+  opacity: 0.2;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-30,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-30,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-30,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-30 {
+  opacity: 0.3;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-40,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-40,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-40,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-40 {
+  opacity: 0.4;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-50,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-50,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-50,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-50 {
+  opacity: 0.5;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-60,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-60,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-60,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-60 {
+  opacity: 0.6;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-70,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-70,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-70,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-70 {
+  opacity: 0.7;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-80,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-80,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-80,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-80 {
+  opacity: 0.8;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-90,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-90,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-90,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-90 {
+  opacity: 0.9;
+}
+.block-cover
+  .block-cover__background.has-background-dim.has-background-dim-100,
+.block-cover
+  .block-cover__gradient-background.has-background-dim.has-background-dim-100,
+.block-cover-image
+  .block-cover__background.has-background-dim.has-background-dim-100,
+.block-cover-image
+  .block-cover__gradient-background.has-background-dim.has-background-dim-100 {
+  opacity: 1;
+}
+.block-cover-image.alignleft,
+.block-cover-image.alignright,
+.block-cover.alignleft,
+.block-cover.alignright {
+  max-width: 420px;
+  width: 100%;
+}
+.block-cover-image:after,
+.block-cover:after {
+  content: "";
+  display: block;
+  font-size: 0;
+  min-height: inherit;
+}
+@supports (position: sticky) {
+  .block-cover-image:after,
+  .block-cover:after {
+    content: none;
+  }
+}
+.block-cover-image.aligncenter,
+.block-cover-image.alignleft,
+.block-cover-image.alignright,
+.block-cover.aligncenter,
+.block-cover.alignleft,
+.block-cover.alignright {
+  display: flex;
+}
+.block-cover .block-cover__inner-container,
+.block-cover-image .block-cover__inner-container {
+  color: inherit;
+  width: 100%;
+  z-index: 1;
+}
+.block-cover h1:where(:not(.has-text-color)),
+.block-cover h2:where(:not(.has-text-color)),
+.block-cover h3:where(:not(.has-text-color)),
+.block-cover h4:where(:not(.has-text-color)),
+.block-cover h5:where(:not(.has-text-color)),
+.block-cover h6:where(:not(.has-text-color)),
+.block-cover p:where(:not(.has-text-color)),
+.block-cover-image h1:where(:not(.has-text-color)),
+.block-cover-image h2:where(:not(.has-text-color)),
+.block-cover-image h3:where(:not(.has-text-color)),
+.block-cover-image h4:where(:not(.has-text-color)),
+.block-cover-image h5:where(:not(.has-text-color)),
+.block-cover-image h6:where(:not(.has-text-color)),
+.block-cover-image p:where(:not(.has-text-color)) {
+  color: inherit;
+}
+.block-cover-image.is-position-top-left,
+.block-cover.is-position-top-left {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.block-cover-image.is-position-top-center,
+.block-cover.is-position-top-center {
+  align-items: flex-start;
+  justify-content: center;
+}
+.block-cover-image.is-position-top-right,
+.block-cover.is-position-top-right {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.block-cover-image.is-position-center-left,
+.block-cover.is-position-center-left {
+  align-items: center;
+  justify-content: flex-start;
+}
+.block-cover-image.is-position-center-center,
+.block-cover.is-position-center-center {
+  align-items: center;
+  justify-content: center;
+}
+.block-cover-image.is-position-center-right,
+.block-cover.is-position-center-right {
+  align-items: center;
+  justify-content: flex-end;
+}
+.block-cover-image.is-position-bottom-left,
+.block-cover.is-position-bottom-left {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.block-cover-image.is-position-bottom-center,
+.block-cover.is-position-bottom-center {
+  align-items: flex-end;
+  justify-content: center;
+}
+.block-cover-image.is-position-bottom-right,
+.block-cover.is-position-bottom-right {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.block-cover-image.has-custom-content-position.has-custom-content-position
+  .block-cover__inner-container,
+.block-cover.has-custom-content-position.has-custom-content-position
+  .block-cover__inner-container {
+  margin: 0;
+}
+.block-cover-image.has-custom-content-position.has-custom-content-position.is-position-bottom-left
+  .block-cover__inner-container,
+.block-cover-image.has-custom-content-position.has-custom-content-position.is-position-bottom-right
+  .block-cover__inner-container,
+.block-cover-image.has-custom-content-position.has-custom-content-position.is-position-center-left
+  .block-cover__inner-container,
+.block-cover-image.has-custom-content-position.has-custom-content-position.is-position-center-right
+  .block-cover__inner-container,
+.block-cover-image.has-custom-content-position.has-custom-content-position.is-position-top-left
+  .block-cover__inner-container,
+.block-cover-image.has-custom-content-position.has-custom-content-position.is-position-top-right
+  .block-cover__inner-container,
+.block-cover.has-custom-content-position.has-custom-content-position.is-position-bottom-left
+  .block-cover__inner-container,
+.block-cover.has-custom-content-position.has-custom-content-position.is-position-bottom-right
+  .block-cover__inner-container,
+.block-cover.has-custom-content-position.has-custom-content-position.is-position-center-left
+  .block-cover__inner-container,
+.block-cover.has-custom-content-position.has-custom-content-position.is-position-center-right
+  .block-cover__inner-container,
+.block-cover.has-custom-content-position.has-custom-content-position.is-position-top-left
+  .block-cover__inner-container,
+.block-cover.has-custom-content-position.has-custom-content-position.is-position-top-right
+  .block-cover__inner-container {
+  margin: 0;
+  width: auto;
+}
+.block-cover .block-cover__image-background,
+.block-cover video.block-cover__video-background,
+.block-cover-image .block-cover__image-background,
+.block-cover-image video.block-cover__video-background {
+  border: 0;
+  bottom: 0;
+  box-shadow: none;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  object-fit: cover;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.block-cover-image.has-parallax,
+.block-cover.has-parallax,
+.block-cover__image-background.has-parallax,
+video.block-cover__video-background.has-parallax {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@supports (-webkit-touch-callout: inherit) {
+  .block-cover-image.has-parallax,
+  .block-cover.has-parallax,
+  .block-cover__image-background.has-parallax,
+  video.block-cover__video-background.has-parallax {
+    background-attachment: scroll;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .block-cover-image.has-parallax,
+  .block-cover.has-parallax,
+  .block-cover__image-background.has-parallax,
+  video.block-cover__video-background.has-parallax {
+    background-attachment: scroll;
+  }
+}
+.block-cover-image.is-repeated,
+.block-cover.is-repeated,
+.block-cover__image-background.is-repeated,
+video.block-cover__video-background.is-repeated {
+  background-repeat: repeat;
+  background-size: auto;
+}
+.block-cover__image-background,
+.block-cover__video-background {
+  z-index: 0;
+}
+.block-cover-image-text,
+.block-cover-image-text a,
+.block-cover-image-text a:active,
+.block-cover-image-text a:focus,
+.block-cover-image-text a:hover,
+.block-cover-text,
+.block-cover-text a,
+.block-cover-text a:active,
+.block-cover-text a:focus,
+.block-cover-text a:hover,
+section.block-cover-image h2,
+section.block-cover-image h2 a,
+section.block-cover-image h2 a:active,
+section.block-cover-image h2 a:focus,
+section.block-cover-image h2 a:hover {
+  color: #fff;
+}
+.block-cover-image .block-cover.has-left-content {
+  justify-content: flex-start;
+}
+.block-cover-image .block-cover.has-right-content {
+  justify-content: flex-end;
+}
+.block-cover-image.has-left-content .block-cover-image-text,
+.block-cover.has-left-content .block-cover-text,
+section.block-cover-image.has-left-content > h2 {
+  margin-left: 0;
+  text-align: left;
+}
+.block-cover-image.has-right-content .block-cover-image-text,
+.block-cover.has-right-content .block-cover-text,
+section.block-cover-image.has-right-content > h2 {
+  margin-right: 0;
+  text-align: right;
+}
+.block-cover .block-cover-text,
+.block-cover-image .block-cover-image-text,
+section.block-cover-image > h2 {
+  font-size: 2em;
+  line-height: 1.25;
+  margin-bottom: 0;
+  max-width: 840px;
+  padding: 0.44em;
+  text-align: center;
+  z-index: 1;
+}
+:where(.block-cover-image:not(.has-text-color)),
+:where(.block-cover:not(.has-text-color)) {
+  color: #fff;
+}
+:where(.block-cover-image.is-light:not(.has-text-color)),
+:where(.block-cover.is-light:not(.has-text-color)) {
+  color: #000;
+}
+
+:root {
+  ---preset--color--black: #000000;
+  ---preset--color--cyan-bluish-gray: #abb8c3;
+  ---preset--color--white: #ffffff;
+  ---preset--color--pale-pink: #f78da7;
+  ---preset--color--vivid-red: #cf2e2e;
+  ---preset--color--luminous-vivid-orange: #ff6900;
+  ---preset--color--luminous-vivid-amber: #fcb900;
+  ---preset--color--light-green-cyan: #7bdcb5;
+  ---preset--color--vivid-green-cyan: #00d084;
+  ---preset--color--pale-cyan-blue: #8ed1fc;
+  ---preset--color--vivid-cyan-blue: #0693e3;
+  ---preset--color--vivid-purple: #9b51e0;
+  ---preset--color--primary: #11181f;
+  ---preset--color--secondary: #005ae1;
+  ---preset--color--foreground: #11181f;
+  ---preset--color--background: #ffffff;
+  ---preset--color--tertiary: #f7f9fd;
+  ---preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+    135deg,
+    rgba(6, 147, 227, 1) 0%,
+    rgb(155, 81, 224) 100%
+  );
+  ---preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+    135deg,
+    rgb(122, 220, 180) 0%,
+    rgb(0, 208, 130) 100%
+  );
+  ---preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+    135deg,
+    rgba(252, 185, 0, 1) 0%,
+    rgba(255, 105, 0, 1) 100%
+  );
+  ---preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+    135deg,
+    rgba(255, 105, 0, 1) 0%,
+    rgb(207, 46, 46) 100%
+  );
+  ---preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+    135deg,
+    rgb(238, 238, 238) 0%,
+    rgb(169, 184, 195) 100%
+  );
+  ---preset--gradient--cool-to-warm-spectrum: linear-gradient(
+    135deg,
+    rgb(74, 234, 220) 0%,
+    rgb(151, 120, 209) 20%,
+    rgb(207, 42, 186) 40%,
+    rgb(238, 44, 130) 60%,
+    rgb(251, 105, 98) 80%,
+    rgb(254, 248, 76) 100%
+  );
+  ---preset--gradient--blush-light-purple: linear-gradient(
+    135deg,
+    rgb(255, 206, 236) 0%,
+    rgb(152, 150, 240) 100%
+  );
+  ---preset--gradient--blush-bordeaux: linear-gradient(
+    135deg,
+    rgb(254, 205, 165) 0%,
+    rgb(254, 45, 45) 50%,
+    rgb(107, 0, 62) 100%
+  );
+  ---preset--gradient--luminous-dusk: linear-gradient(
+    135deg,
+    rgb(255, 203, 112) 0%,
+    rgb(199, 81, 192) 50%,
+    rgb(65, 88, 208) 100%
+  );
+  ---preset--gradient--pale-ocean: linear-gradient(
+    135deg,
+    rgb(255, 245, 203) 0%,
+    rgb(182, 227, 212) 50%,
+    rgb(51, 167, 181) 100%
+  );
+  ---preset--gradient--electric-grass: linear-gradient(
+    135deg,
+    rgb(202, 248, 128) 0%,
+    rgb(113, 206, 126) 100%
+  );
+  ---preset--gradient--midnight: linear-gradient(
+    135deg,
+    rgb(2, 3, 129) 0%,
+    rgb(40, 116, 252) 100%
+  );
+  ---preset--font-size--small: clamp(
+    0.825rem,
+    0.825rem + ((1vw - 0.2rem) * 0.433),
+    1.0625rem
+  );
+  ---preset--font-size--medium: clamp(
+    1rem,
+    1rem + ((1vw - 0.2rem) * 0.455),
+    1.25rem
+  );
+  ---preset--font-size--large: clamp(
+    1.25rem,
+    1.25rem + ((1vw - 0.2rem) * 0.569),
+    1.563rem
+  );
+  ---preset--font-size--x-large: clamp(
+    1.563rem,
+    1.563rem + ((1vw - 0.2rem) * 0.709),
+    1.953rem
+  );
+  ---preset--font-size--x-small: 0.8rem;
+  ---preset--font-size--xx-large: clamp(
+    1.953rem,
+    1.953rem + ((1vw - 0.2rem) * 0.887),
+    2.441rem
+  );
+  ---preset--font-size--xxx-large: clamp(
+    2.441rem,
+    2.441rem + ((1vw - 0.2rem) * 1.111),
+    3.052rem
+  );
+  ---preset--font-size--xxxx-large: clamp(
+    3.052rem,
+    3.052rem + ((1vw - 0.2rem) * 1.387),
+    3.815rem
+  );
+  ---preset--font-size--xxxxx-large: clamp(
+    3.815rem,
+    3.815rem + ((1vw - 0.2rem) * 1.733),
+    4.768rem
+  );
+  ---preset--font-family--albert-sans: "Albert Sans", sans-serif;
+  ---preset--font-family--alegreya: Alegreya, serif;
+  ---preset--font-family--arvo: Arvo, serif;
+  ---preset--font-family--bodoni-moda: "Bodoni Moda", serif;
+  ---preset--font-family--bricolage-grotesque: "Bricolage Grotesque",
+    sans-serif;
+  ---preset--font-family--cabin: Cabin, sans-serif;
+  ---preset--font-family--chivo: Chivo, sans-serif;
+  ---preset--font-family--commissioner: Commissioner, sans-serif;
+  ---preset--font-family--cormorant: Cormorant, serif;
+  ---preset--font-family--courier-prime: "Courier Prime", monospace;
+  ---preset--font-family--crimson-pro: "Crimson Pro", serif;
+  ---preset--font-family--dm-mono: "DM Mono", monospace;
+  ---preset--font-family--dm-sans: "DM Sans", sans-serif;
+  ---preset--font-family--dm-serif-display: "DM Serif Display", serif;
+  ---preset--font-family--domine: Domine, serif;
+  ---preset--font-family--eb-garamond: "EB Garamond", serif;
+  ---preset--font-family--epilogue: Epilogue, sans-serif;
+  ---preset--font-family--fahkwang: Fahkwang, sans-serif;
+  ---preset--font-family--figtree: Figtree, sans-serif;
+  ---preset--font-family--fira-sans: "Fira Sans", sans-serif;
+  ---preset--font-family--fjalla-one: "Fjalla One", sans-serif;
+  ---preset--font-family--fraunces: Fraunces, serif;
+  ---preset--font-family--gabarito: Gabarito, system-ui;
+  ---preset--font-family--ibm-plex-mono: "IBM Plex Mono", monospace;
+  ---preset--font-family--ibm-plex-sans: "IBM Plex Sans", sans-serif;
+  ---preset--font-family--ibarra-real-nova: "Ibarra Real Nova", serif;
+  ---preset--font-family--instrument-serif: "Instrument Serif", serif;
+  ---preset--font-family--inter: Inter;
+  ---preset--font-family--josefin-sans: "Josefin Sans", sans-serif;
+  ---preset--font-family--jost: Jost, sans-serif;
+  ---preset--font-family--libre-baskerville: "Libre Baskerville", serif;
+  ---preset--font-family--libre-franklin: "Libre Franklin", sans-serif;
+  ---preset--font-family--literata: Literata, serif;
+  ---preset--font-family--lora: Lora, serif;
+  ---preset--font-family--merriweather: Merriweather, serif;
+  ---preset--font-family--montserrat: Montserrat, sans-serif;
+  ---preset--font-family--newsreader: Newsreader, serif;
+  ---preset--font-family--noto-sans-mono: "Noto Sans Mono", sans-serif;
+  ---preset--font-family--nunito: Nunito, sans-serif;
+  ---preset--font-family--open-sans: "Open Sans", sans-serif;
+  ---preset--font-family--overpass: Overpass, sans-serif;
+  ---preset--font-family--pt-serif: "PT Serif", serif;
+  ---preset--font-family--petrona: Petrona, serif;
+  ---preset--font-family--piazzolla: Piazzolla, serif;
+  ---preset--font-family--playfair-display: "Playfair Display", serif;
+  ---preset--font-family--plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  ---preset--font-family--poppins: Poppins, sans-serif;
+  ---preset--font-family--raleway: Raleway, sans-serif;
+  ---preset--font-family--roboto: Roboto, sans-serif;
+  ---preset--font-family--roboto-slab: "Roboto Slab", serif;
+  ---preset--font-family--rubik: Rubik, sans-serif;
+  ---preset--font-family--rufina: Rufina, serif;
+  ---preset--font-family--sora: Sora, sans-serif;
+  ---preset--font-family--source-sans-3: "Source Sans 3", sans-serif;
+  ---preset--font-family--source-serif-4: "Source Serif 4", serif;
+  ---preset--font-family--space-mono: "Space Mono", monospace;
+  ---preset--font-family--syne: Syne, sans-serif;
+  ---preset--font-family--texturina: Texturina, serif;
+  ---preset--font-family--urbanist: Urbanist, sans-serif;
+  ---preset--font-family--work-sans: "Work Sans", sans-serif;
+  ---preset--spacing--20: 0.44rem;
+  ---preset--spacing--30: 0.25rem;
+  ---preset--spacing--40: 1rem;
+  ---preset--spacing--50: 1.75rem;
+  ---preset--spacing--60: clamp(1.75rem, 3.5211268vw, 3.5rem);
+  ---preset--spacing--70: clamp(3.5rem, 7.3943662vw, 5.25rem);
+  ---preset--spacing--80: clamp(5.25rem, 12.3239437vw, 8.75rem);
+  ---preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+  ---preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+  ---preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+  ---preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+    6px 6px rgba(0, 0, 0, 1);
+  ---preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+
+:root {
+  ---style--global--content-size: 620px;
+  ---style--global--wide-size: 1200px;
+}
+
+body {
+  margin: 0;
+}
+
+.site-blocks {
+  padding-top: var(---style--root--padding-top);
+  padding-bottom: var(---style--root--padding-bottom);
+}
+
+.has-global-padding {
+  padding-right: var(---style--root--padding-right);
+  padding-left: var(---style--root--padding-left);
+}
+
+.has-global-padding :where(.has-global-padding:not(.block-block)) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.has-global-padding > .alignfull {
+  margin-right: calc(var(---style--root--padding-right) * -1);
+  margin-left: calc(var(---style--root--padding-left) * -1);
+}
+
+.has-global-padding
+  :where(.has-global-padding:not(.block-block))
+  > .alignfull {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.has-global-padding
+  > .alignfull:where(
+    :not(.has-global-padding):not(.is-layout-flex):not(.is-layout-grid)
+  )
+  > :where(
+    [class*="block-"]:not(.alignfull):not([class*="__"]),
+    .block:not(.alignfull),
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol
+  ) {
+  padding-right: var(---style--root--padding-right);
+  padding-left: var(---style--root--padding-left);
+}
+
+.has-global-padding
+  :where(.has-global-padding)
+  > .alignfull:where(:not(.has-global-padding))
+  > :where(
+    [class*="block-"]:not(.alignfull):not([class*="__"]),
+    .block:not(.alignfull),
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol
+  ) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.site-blocks > .alignleft {
+  float: left;
+  margin-right: 2em;
+}
+
+.site-blocks > .alignright {
+  float: right;
+  margin-left: 2em;
+}
+
+.site-blocks > .aligncenter {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:where(.site-blocks) > * {
+  margin-block-start: var(---preset--spacing--50);
+  margin-block-end: 0;
+}
+
+:where(.site-blocks) > :first-child {
+  margin-block-start: 0;
+}
+
+:where(.site-blocks) > :last-child {
+  margin-block-end: 0;
+}
+
+:root {
+  ---style--block-gap: var(---preset--spacing--50);
+}
+
+:where(.is-layout-flow) > :first-child {
+  margin-block-start: 0;
+}
+
+:where(.is-layout-flow) > :last-child {
+  margin-block-end: 0;
+}
+
+:where(.is-layout-flow) > * {
+  margin-block-start: var(---preset--spacing--50);
+  margin-block-end: 0;
+}
+
+:where(.is-layout-constrained) > :first-child {
+  margin-block-start: 0;
+}
+
+:where(.is-layout-constrained) > :last-child {
+  margin-block-end: 0;
+}
+
+:where(.is-layout-constrained) > * {
+  margin-block-start: var(---preset--spacing--50);
+  margin-block-end: 0;
+}
+
+:where(.is-layout-flex) {
+  gap: var(---preset--spacing--50);
+}
+
+:where(.is-layout-grid) {
+  gap: var(---preset--spacing--50);
+}
+
+.is-layout-flow > .alignleft {
+  float: left;
+  margin-inline-start: 0;
+  margin-inline-end: 2em;
+}
+
+.is-layout-flow > .alignright {
+  float: right;
+  margin-inline-start: 2em;
+  margin-inline-end: 0;
+}
+
+.is-layout-flow > .aligncenter {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.is-layout-constrained > .alignleft {
+  float: left;
+  margin-inline-start: 0;
+  margin-inline-end: 2em;
+}
+
+.is-layout-constrained > .alignright {
+  float: right;
+  margin-inline-start: 2em;
+  margin-inline-end: 0;
+}
+
+.is-layout-constrained > .aligncenter {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: var(---style--global--content-size);
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.is-layout-constrained > .alignwide {
+  max-width: var(---style--global--wide-size);
+}
+
+body .is-layout-flex {
+  display: flex;
+}
+
+.is-layout-flex {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.is-layout-flex > :is(*, div) {
+  margin: 0;
+}
+
+body .is-layout-grid {
+  display: grid;
+}
+
+.is-layout-grid > :is(*, div) {
+  margin: 0;
+}
+
+:where(body) {
+  background-color: var(---preset--color--background);
+  color: var(---preset--color--foreground);
+  font-family: var(---preset--font-family--inter);
+  font-size: var(---preset--font-size--small);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  ---style--root--padding-top: 0px;
+  ---style--root--padding-right: var(---preset--spacing--50);
+  ---style--root--padding-bottom: 0px;
+  ---style--root--padding-left: var(---preset--spacing--50);
+}
+
+:where(a:where(:not(.element-button))) {
+  color: var(---preset--color--foreground);
+  text-decoration: underline;
+}
+
+:where(a:where(:not(.element-button)):hover) {
+  color: var(---preset--color--primary);
+  text-decoration: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(---preset--font-family--inter);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+:where(h1) {
+  font-size: var(---preset--font-size--xxx-large);
+  line-height: 1.127;
+}
+
+:where(h2) {
+  font-size: var(---preset--font-size--xx-large);
+  line-height: 1.152;
+}
+
+:where(h3) {
+  font-size: var(---preset--font-size--x-large);
+  line-height: 1.28;
+}
+
+:where(h4) {
+  font-size: var(---preset--font-size--large);
+  line-height: 1.5;
+}
+
+:where(h5) {
+  font-size: var(---preset--font-size--medium);
+  line-height: 1.5;
+}
+
+:where(h6) {
+  font-size: var(---preset--font-size--medium);
+  line-height: 1.5;
+}
+
+:where(.element-button, .block-button__link) {
+  background-color: var(---preset--color--primary);
+  border-radius: 0.25rem;
+  border-width: 0;
+  color: var(---preset--color--background);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding-top: calc(0.667em + 2px);
+  padding-right: calc(1.333em + 2px);
+  padding-bottom: calc(0.667em + 2px);
+  padding-left: calc(1.333em + 2px);
+  text-decoration: none;
+}
+
+:where(.element-button:hover, .block-button__link:hover) {
+  background-color: var(---preset--color--secondary);
+  color: var(---preset--color--background);
+}
+
+:where(.element-button:focus, .block-button__link:focus) {
+  background-color: var(---preset--color--foreground);
+  color: var(---preset--color--background);
+  outline-color: var(---preset--color--primary);
+  outline-offset: 2px;
+  outline-style: dotted;
+  outline-width: 1px;
+}
+
+:where(.element-button:active, .block-button__link:active) {
+  background-color: var(---preset--color--foreground);
+  color: var(---preset--color--background);
+}
+
+.has-black-color {
+  color: var(---preset--color--black) !important;
+}
+
+.has-cyan-bluish-gray-color {
+  color: var(---preset--color--cyan-bluish-gray) !important;
+}
+
+.has-white-color {
+  color: var(---preset--color--white) !important;
+}
+
+.has-pale-pink-color {
+  color: var(---preset--color--pale-pink) !important;
+}
+
+.has-vivid-red-color {
+  color: var(---preset--color--vivid-red) !important;
+}
+
+.has-luminous-vivid-orange-color {
+  color: var(---preset--color--luminous-vivid-orange) !important;
+}
+
+.has-luminous-vivid-amber-color {
+  color: var(---preset--color--luminous-vivid-amber) !important;
+}
+
+.has-light-green-cyan-color {
+  color: var(---preset--color--light-green-cyan) !important;
+}
+
+.has-vivid-green-cyan-color {
+  color: var(---preset--color--vivid-green-cyan) !important;
+}
+
+.has-pale-cyan-blue-color {
+  color: var(---preset--color--pale-cyan-blue) !important;
+}
+
+.has-vivid-cyan-blue-color {
+  color: var(---preset--color--vivid-cyan-blue) !important;
+}
+
+.has-vivid-purple-color {
+  color: var(---preset--color--vivid-purple) !important;
+}
+
+.has-primary-color {
+  color: var(---preset--color--primary) !important;
+}
+
+.has-secondary-color {
+  color: var(---preset--color--secondary) !important;
+}
+
+.has-foreground-color {
+  color: var(---preset--color--foreground) !important;
+}
+
+.has-background-color {
+  color: var(---preset--color--background) !important;
+}
+
+.has-tertiary-color {
+  color: var(---preset--color--tertiary) !important;
+}
+
+.has-black-background-color {
+  background-color: var(---preset--color--black) !important;
+}
+
+.has-cyan-bluish-gray-background-color {
+  background-color: var(---preset--color--cyan-bluish-gray) !important;
+}
+
+.has-white-background-color {
+  background-color: var(---preset--color--white) !important;
+}
+
+.has-pale-pink-background-color {
+  background-color: var(---preset--color--pale-pink) !important;
+}
+
+.has-vivid-red-background-color {
+  background-color: var(---preset--color--vivid-red) !important;
+}
+
+.has-luminous-vivid-orange-background-color {
+  background-color: var(---preset--color--luminous-vivid-orange) !important;
+}
+
+.has-luminous-vivid-amber-background-color {
+  background-color: var(---preset--color--luminous-vivid-amber) !important;
+}
+
+.has-light-green-cyan-background-color {
+  background-color: var(---preset--color--light-green-cyan) !important;
+}
+
+.has-vivid-green-cyan-background-color {
+  background-color: var(---preset--color--vivid-green-cyan) !important;
+}
+
+.has-pale-cyan-blue-background-color {
+  background-color: var(---preset--color--pale-cyan-blue) !important;
+}
+
+.has-vivid-cyan-blue-background-color {
+  background-color: var(---preset--color--vivid-cyan-blue) !important;
+}
+
+.has-vivid-purple-background-color {
+  background-color: var(---preset--color--vivid-purple) !important;
+}
+
+.has-primary-background-color {
+  background-color: var(---preset--color--primary) !important;
+}
+
+.has-secondary-background-color {
+  background-color: var(---preset--color--secondary) !important;
+}
+
+.has-foreground-background-color {
+  background-color: var(---preset--color--foreground) !important;
+}
+
+.has-background-background-color {
+  background-color: var(---preset--color--background) !important;
+}
+
+.has-tertiary-background-color {
+  background-color: var(---preset--color--tertiary) !important;
+}
+
+.has-black-border-color {
+  border-color: var(---preset--color--black) !important;
+}
+
+.has-cyan-bluish-gray-border-color {
+  border-color: var(---preset--color--cyan-bluish-gray) !important;
+}
+
+.has-white-border-color {
+  border-color: var(---preset--color--white) !important;
+}
+
+.has-pale-pink-border-color {
+  border-color: var(---preset--color--pale-pink) !important;
+}
+
+.has-vivid-red-border-color {
+  border-color: var(---preset--color--vivid-red) !important;
+}
+
+.has-luminous-vivid-orange-border-color {
+  border-color: var(---preset--color--luminous-vivid-orange) !important;
+}
+
+.has-luminous-vivid-amber-border-color {
+  border-color: var(---preset--color--luminous-vivid-amber) !important;
+}
+
+.has-light-green-cyan-border-color {
+  border-color: var(---preset--color--light-green-cyan) !important;
+}
+
+.has-vivid-green-cyan-border-color {
+  border-color: var(---preset--color--vivid-green-cyan) !important;
+}
+
+.has-pale-cyan-blue-border-color {
+  border-color: var(---preset--color--pale-cyan-blue) !important;
+}
+
+.has-vivid-cyan-blue-border-color {
+  border-color: var(---preset--color--vivid-cyan-blue) !important;
+}
+
+.has-vivid-purple-border-color {
+  border-color: var(---preset--color--vivid-purple) !important;
+}
+
+.has-primary-border-color {
+  border-color: var(---preset--color--primary) !important;
+}
+
+.has-secondary-border-color {
+  border-color: var(---preset--color--secondary) !important;
+}
+
+.has-foreground-border-color {
+  border-color: var(---preset--color--foreground) !important;
+}
+
+.has-background-border-color {
+  border-color: var(---preset--color--background) !important;
+}
+
+.has-tertiary-border-color {
+  border-color: var(---preset--color--tertiary) !important;
+}
+
+.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+  background: var(
+    ---preset--gradient--vivid-cyan-blue-to-vivid-purple
+  ) !important;
+}
+
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+  background: var(
+    ---preset--gradient--light-green-cyan-to-vivid-green-cyan
+  ) !important;
+}
+
+.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+  background: var(
+    ---preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+  ) !important;
+}
+
+.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+  background: var(
+    ---preset--gradient--luminous-vivid-orange-to-vivid-red
+  ) !important;
+}
+
+.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+  background: var(
+    ---preset--gradient--very-light-gray-to-cyan-bluish-gray
+  ) !important;
+}
+
+.has-cool-to-warm-spectrum-gradient-background {
+  background: var(---preset--gradient--cool-to-warm-spectrum) !important;
+}
+
+.has-blush-light-purple-gradient-background {
+  background: var(---preset--gradient--blush-light-purple) !important;
+}
+
+.has-blush-bordeaux-gradient-background {
+  background: var(---preset--gradient--blush-bordeaux) !important;
+}
+
+.has-luminous-dusk-gradient-background {
+  background: var(---preset--gradient--luminous-dusk) !important;
+}
+
+.has-pale-ocean-gradient-background {
+  background: var(---preset--gradient--pale-ocean) !important;
+}
+
+.has-electric-grass-gradient-background {
+  background: var(---preset--gradient--electric-grass) !important;
+}
+
+.has-midnight-gradient-background {
+  background: var(---preset--gradient--midnight) !important;
+}
+
+.has-small-font-size {
+  font-size: var(---preset--font-size--small) !important;
+}
+
+.has-medium-font-size {
+  font-size: var(---preset--font-size--medium) !important;
+}
+
+.has-large-font-size {
+  font-size: var(---preset--font-size--large) !important;
+}
+
+.has-x-large-font-size {
+  font-size: var(---preset--font-size--x-large) !important;
+}
+
+.has-x-small-font-size {
+  font-size: var(---preset--font-size--x-small) !important;
+}
+
+.has-xx-large-font-size {
+  font-size: var(---preset--font-size--xx-large) !important;
+}
+
+.has-xxx-large-font-size {
+  font-size: var(---preset--font-size--xxx-large) !important;
+}
+
+.has-xxxx-large-font-size {
+  font-size: var(---preset--font-size--xxxx-large) !important;
+}
+
+.has-xxxxx-large-font-size {
+  font-size: var(---preset--font-size--xxxxx-large) !important;
+}
+
+.has-albert-sans-font-family {
+  font-family: var(---preset--font-family--albert-sans) !important;
+}
+
+.has-alegreya-font-family {
+  font-family: var(---preset--font-family--alegreya) !important;
+}
+
+.has-arvo-font-family {
+  font-family: var(---preset--font-family--arvo) !important;
+}
+
+.has-bodoni-moda-font-family {
+  font-family: var(---preset--font-family--bodoni-moda) !important;
+}
+
+.has-bricolage-grotesque-font-family {
+  font-family: var(---preset--font-family--bricolage-grotesque) !important;
+}
+
+.has-cabin-font-family {
+  font-family: var(---preset--font-family--cabin) !important;
+}
+
+.has-chivo-font-family {
+  font-family: var(---preset--font-family--chivo) !important;
+}
+
+.has-commissioner-font-family {
+  font-family: var(---preset--font-family--commissioner) !important;
+}
+
+.has-cormorant-font-family {
+  font-family: var(---preset--font-family--cormorant) !important;
+}
+
+.has-courier-prime-font-family {
+  font-family: var(---preset--font-family--courier-prime) !important;
+}
+
+.has-crimson-pro-font-family {
+  font-family: var(---preset--font-family--crimson-pro) !important;
+}
+
+.has-dm-mono-font-family {
+  font-family: var(---preset--font-family--dm-mono) !important;
+}
+
+.has-dm-sans-font-family {
+  font-family: var(---preset--font-family--dm-sans) !important;
+}
+
+.has-dm-serif-display-font-family {
+  font-family: var(---preset--font-family--dm-serif-display) !important;
+}
+
+.has-domine-font-family {
+  font-family: var(---preset--font-family--domine) !important;
+}
+
+.has-eb-garamond-font-family {
+  font-family: var(---preset--font-family--eb-garamond) !important;
+}
+
+.has-epilogue-font-family {
+  font-family: var(---preset--font-family--epilogue) !important;
+}
+
+.has-fahkwang-font-family {
+  font-family: var(---preset--font-family--fahkwang) !important;
+}
+
+.has-figtree-font-family {
+  font-family: var(---preset--font-family--figtree) !important;
+}
+
+.has-fira-sans-font-family {
+  font-family: var(---preset--font-family--fira-sans) !important;
+}
+
+.has-fjalla-one-font-family {
+  font-family: var(---preset--font-family--fjalla-one) !important;
+}
+
+.has-fraunces-font-family {
+  font-family: var(---preset--font-family--fraunces) !important;
+}
+
+.has-gabarito-font-family {
+  font-family: var(---preset--font-family--gabarito) !important;
+}
+
+.has-ibm-plex-mono-font-family {
+  font-family: var(---preset--font-family--ibm-plex-mono) !important;
+}
+
+.has-ibm-plex-sans-font-family {
+  font-family: var(---preset--font-family--ibm-plex-sans) !important;
+}
+
+.has-ibarra-real-nova-font-family {
+  font-family: var(---preset--font-family--ibarra-real-nova) !important;
+}
+
+.has-instrument-serif-font-family {
+  font-family: var(---preset--font-family--instrument-serif) !important;
+}
+
+.has-inter-font-family {
+  font-family: var(---preset--font-family--inter) !important;
+}
+
+.has-josefin-sans-font-family {
+  font-family: var(---preset--font-family--josefin-sans) !important;
+}
+
+.has-jost-font-family {
+  font-family: var(---preset--font-family--jost) !important;
+}
+
+.has-libre-baskerville-font-family {
+  font-family: var(---preset--font-family--libre-baskerville) !important;
+}
+
+.has-libre-franklin-font-family {
+  font-family: var(---preset--font-family--libre-franklin) !important;
+}
+
+.has-literata-font-family {
+  font-family: var(---preset--font-family--literata) !important;
+}
+
+.has-lora-font-family {
+  font-family: var(---preset--font-family--lora) !important;
+}
+
+.has-merriweather-font-family {
+  font-family: var(---preset--font-family--merriweather) !important;
+}
+
+.has-montserrat-font-family {
+  font-family: var(---preset--font-family--montserrat) !important;
+}
+
+.has-newsreader-font-family {
+  font-family: var(---preset--font-family--newsreader) !important;
+}
+
+.has-noto-sans-mono-font-family {
+  font-family: var(---preset--font-family--noto-sans-mono) !important;
+}
+
+.has-nunito-font-family {
+  font-family: var(---preset--font-family--nunito) !important;
+}
+
+.has-open-sans-font-family {
+  font-family: var(---preset--font-family--open-sans) !important;
+}
+
+.has-overpass-font-family {
+  font-family: var(---preset--font-family--overpass) !important;
+}
+
+.has-pt-serif-font-family {
+  font-family: var(---preset--font-family--pt-serif) !important;
+}
+
+.has-petrona-font-family {
+  font-family: var(---preset--font-family--petrona) !important;
+}
+
+.has-piazzolla-font-family {
+  font-family: var(---preset--font-family--piazzolla) !important;
+}
+
+.has-playfair-display-font-family {
+  font-family: var(---preset--font-family--playfair-display) !important;
+}
+
+.has-plus-jakarta-sans-font-family {
+  font-family: var(---preset--font-family--plus-jakarta-sans) !important;
+}
+
+.has-poppins-font-family {
+  font-family: var(---preset--font-family--poppins) !important;
+}
+
+.has-raleway-font-family {
+  font-family: var(---preset--font-family--raleway) !important;
+}
+
+.has-roboto-font-family {
+  font-family: var(---preset--font-family--roboto) !important;
+}
+
+.has-roboto-slab-font-family {
+  font-family: var(---preset--font-family--roboto-slab) !important;
+}
+
+.has-rubik-font-family {
+  font-family: var(---preset--font-family--rubik) !important;
+}
+
+.has-rufina-font-family {
+  font-family: var(---preset--font-family--rufina) !important;
+}
+
+.has-sora-font-family {
+  font-family: var(---preset--font-family--sora) !important;
+}
+
+.has-source-sans-3-font-family {
+  font-family: var(---preset--font-family--source-sans-3) !important;
+}
+
+.has-source-serif-4-font-family {
+  font-family: var(---preset--font-family--source-serif-4) !important;
+}
+
+.has-space-mono-font-family {
+  font-family: var(---preset--font-family--space-mono) !important;
+}
+
+.has-syne-font-family {
+  font-family: var(---preset--font-family--syne) !important;
+}
+
+.has-texturina-font-family {
+  font-family: var(---preset--font-family--texturina) !important;
+}
+
+.has-urbanist-font-family {
+  font-family: var(---preset--font-family--urbanist) !important;
+}
+
+.has-work-sans-font-family {
+  font-family: var(---preset--font-family--work-sans) !important;
+}
+
+:where(.block-heading) {
+  color: var(---preset--color--foreground);
+}
+
+:where(.block-heading a:where(:not(.element-button))) {
+  color: var(---preset--color--foreground);
+}
+
+:where(.block-separator) {
+  border-color: currentColor;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  color: var(---preset--color--foreground);
+}
+
+:where(.block-site-tagline) {
+  font-size: var(---preset--font-size--small);
+}
+
+:where(.block-site-title) {
+  font-size: var(---preset--font-size--medium);
+  font-style: normal;
+}
+
+:where(.block-site-title a:where(:not(.element-button))) {
+  color: var(---preset--color--foreground);
+  text-decoration: none;
+}
+
+:where(.block-site-title a:where(:not(.element-button)):hover) {
+  color: var(---preset--color--foreground);
+  text-decoration: underline;
+}
+
+/* Remove block gap between first-level blocks */
+:where(.site-blocks) > * {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.elements-f414e6ea435c917f6316034a1356f57b
+  a:where(:not(.element-button)) {
+  color: #dbff00;
+}
+
+.container-core-group-is-layout-1 {
+  gap: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-core-group-is-layout-2 {
+  gap: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-core-group-is-layout-3 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-core-group-is-layout-4 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-core-group-is-layout-5 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-core-group-is-layout-6 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-core-group-is-layout-7 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-core-group-is-layout-8 {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.container-core-columns-is-layout-1 {
+  flex-wrap: nowrap;
+}
+
+.container-core-group-is-layout-10 > * {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.container-core-group-is-layout-10 > * + * {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZ1rib2Bg-4.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/spacemono/v13/i7dPIFZifjKcF5UAWdDRUEN2RFq7AwU.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/spacemono/v13/i7dNIFZifjKcF5UAWdDRYER8RXi-EwWMbg.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/spacemono/v13/i7dMIFZifjKcF5UAWdDRaPpZYFeQHwyVd3U.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("https://fonts.wp.com/s/spacemono/v13/i7dSIFZifjKcF5UAWdDRYERE_FeaHi6QZ3WfYg.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("https://s0.wp.com/content/themes/pub/creatio-2/assets/fonts/inter_normal_700.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("https://s0.wp.com/content/themes/pub/creatio-2/assets/fonts/inter_normal_500.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("https://s0.wp.com/content/themes/pub/creatio-2/assets/fonts/inter_normal_600.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("https://s0.wp.com/content/themes/pub/creatio-2/assets/fonts/inter_normal_400.ttf")
+    format("truetype");
+}
